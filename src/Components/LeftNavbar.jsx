@@ -18,14 +18,14 @@ const LeftNavbar = () => {
         </div>
 
         <div className="flex flex-col gap-4 w-full">
-          <a
+          <Link
             id="DashBoard"
-            href="/"
+            to="/"
             className="flex items-center gap-4 text-base no-underline text-white bg-gray-700 h-12 rounded-lg p-3 hover:bg-gray-600"
           >
             <FontAwesomeIcon icon={faBars} className="h-5" />
             <p>DashBoard</p>
-          </a>
+          </Link>
 
           <Link
             to="/wallet"
@@ -35,26 +35,26 @@ const LeftNavbar = () => {
             <p>Wallet</p>
           </Link>
 
-          <a
+          <Link
             id="transaction"
-            href="/transaction"
+            to="/transaction"
             className="flex items-center gap-4 text-base no-underline text-white bg-gray-700 h-12 rounded-lg p-3 hover:bg-gray-600"
           >
             <FontAwesomeIcon icon={faReceipt} className="h-5" />
             <p>Transactions</p>
-          </a>
+          </Link>
         </div>
       </div>
 
       <div className="flex flex-col items-center mb-4">
-        <a
+        <Link
           id="support"
-          href="/Support"
+          to="/Support"
           className="flex items-center gap-4 text-base no-underline text-white bg-gray-700 h-12 rounded-lg p-3 hover:bg-gray-600"
         >
           <FontAwesomeIcon icon={faHeadset} className="h-5" />
           <p>Support</p>
-        </a>
+        </Link>
       </div>
     </div>
   );
