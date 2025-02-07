@@ -7,6 +7,7 @@ import {
   faHeadset,
   faHome,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const LeftNavbar = () => {
   return (
@@ -26,14 +27,13 @@ const LeftNavbar = () => {
             <p>DashBoard</p>
           </a>
 
-          <a
-            id="wallet"
-            href="/wallet"
+          <Link
+            to="/wallet"
             className="flex items-center gap-4 text-base no-underline text-white bg-gray-700 h-12 rounded-lg p-3 hover:bg-gray-600"
           >
             <FontAwesomeIcon icon={faWallet} className="h-5" />
             <p>Wallet</p>
-          </a>
+          </Link>
 
           <a
             id="transaction"
