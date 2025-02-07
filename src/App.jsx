@@ -7,21 +7,26 @@ import Wallet from "./Components/Wallet";
 import User from "./Components/User";
 import Settings from "./Components/Settings";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex">
-      <LeftNavbar />
-      <div className="flex flex-col w-full">
-        <Navbar />
-        <Body />
-        <Support />
-        <Transaction />
-        <Wallet />
-        <User />
-        <Settings />
+    <BrowserRouter>
+      <div className="flex">
+        <LeftNavbar />
+        <div className="flex flex-col w-full">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Body />} />
+            <Route path="/support" element={<Support />} />
+            <Route path="/transaction" element={<Transaction />} />
+            <Route path="/wallet" element={<Wallet />} />
+            <Route path="/user" element={<User />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

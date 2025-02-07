@@ -5,14 +5,14 @@ import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
 const Body = () => {
   return (
-    <div className="p-6 bg-gray-900 min-h-[91.4vh]">
+    <div className="p-6 bg-gray-900 min-h-[92vh]">
       {/* Portfolio Section */}
-      <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white mt-5 mx-auto w-full md:w-4/5 h-[14vh] p-6 rounded-2xl transition-all duration-300 hover:bg-gray-700 shadow-xl flex flex-col md:flex-row justify-between items-center">
-        <div className="mb-4 md:mb-0">
+      <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white mt-5 mx-auto w-[66vw] h-[14vh] p-6 rounded-2xl transition-all duration-300 hover:bg-gray-700 shadow-xl flex justify-between items-center">
+        <div>
           <p className="text-lg font-medium opacity-80">Total Portfolio</p>
           <p className="text-3xl font-bold">$113,312.24</p>
         </div>
-        <div className="mb-4 md:mb-0">
+        <div>
           <p className="text-lg font-medium opacity-80">Wallet Balance</p>
           <p className="text-3xl font-bold">22.3940100 BTC</p>
         </div>
@@ -27,8 +27,8 @@ const Body = () => {
       </div>
 
       {/* Graph & Transactions */}
-      <div className="flex flex-wrap justify-center mt-5 gap-6">
-        <div className="bg-gray-800 text-white w-full md:w-[39%] h-[38vh] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+      <div className="flex justify-center mt-5 gap-6">
+        <div className="bg-gray-800 text-white w-[39%] h-[38vh] p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
           <div className="flex justify-between items-center">
             <div>
               <p className="text-lg font-medium opacity-80">Current Price</p>

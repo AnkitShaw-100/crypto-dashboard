@@ -10,7 +10,7 @@ import {
 
 const LeftNavbar = () => {
   return (
-    <div className="w-1/6 h-screen bg-gray-800 text-white flex flex-col justify-between p-4">
+    <div className="w-full md:w-1/6 h-screen bg-gray-800 text-white flex flex-col justify-between p-4">
       <div className="flex flex-col items-center">
         <div className="flex items-center gap-2 mb-8">
           <p className="text-2xl font-bold">@CryptoVerse</p>
@@ -19,7 +19,7 @@ const LeftNavbar = () => {
         <div className="flex flex-col gap-4 w-full">
           <a
             id="DashBoard"
-            href="#dashboard"
+            href="/"
             className="flex items-center gap-4 text-base no-underline text-white bg-gray-700 h-12 rounded-lg p-3 hover:bg-gray-600"
           >
             <FontAwesomeIcon icon={faBars} className="h-5" />
@@ -28,7 +28,7 @@ const LeftNavbar = () => {
 
           <a
             id="wallet"
-            href="#wallet"
+            href="/wallet"
             className="flex items-center gap-4 text-base no-underline text-white bg-gray-700 h-12 rounded-lg p-3 hover:bg-gray-600"
           >
             <FontAwesomeIcon icon={faWallet} className="h-5" />
@@ -37,7 +37,7 @@ const LeftNavbar = () => {
 
           <a
             id="transaction"
-            href="#Transactions"
+            href="/transaction"
             className="flex items-center gap-4 text-base no-underline text-white bg-gray-700 h-12 rounded-lg p-3 hover:bg-gray-600"
           >
             <FontAwesomeIcon icon={faReceipt} className="h-5" />
